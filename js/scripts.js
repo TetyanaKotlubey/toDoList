@@ -128,10 +128,10 @@ $(document).ready(()=>{
             $(parent).find(item).fadeIn();
         })
     }
-    // function getData()
-    // {
-    //     let data = localStorage.getItem('todos');
-    //     data = data ? JSON.parse(data) : []
-    //     return data;
-    // }
+    function getData()
+    {
+        let data = localStorage.getItem('todos');
+        data = data ? JSON.parse(data) : []
+        return data;
+    }
 });
