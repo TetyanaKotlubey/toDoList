@@ -1,8 +1,8 @@
 $(document).ready(()=>{
     let existTodos = getData();
-    $(existTodos).each(index, todo) => {
+    $(existTodos).each(index, todo => {
         createItem(todo, '#listTodo')
-    }
+    });
     $('form').on('submit', (e) => 
     {
         e.preventDefault();
@@ -128,14 +128,10 @@ $(document).ready(()=>{
             $(parent).find(item).fadeIn();
         })
     }
-    function getData()
-    {
-        let data = localStorage.getItem('todos');
-        data = data ? JSON.parse(data) : []
-        return data;
-    }
-    fuction setData()
-    {
-
-    }
+    // function getData()
+    // {
+    //     let data = localStorage.getItem('todos');
+    //     data = data ? JSON.parse(data) : []
+    //     return data;
+    // }
 });
